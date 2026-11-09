@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b0e">
+  <meta name="description" content="RIYAD BIKE — Bangladesh Motorcycle Store.">
+  <title>RIYAD BIKE — Find Your Next Motorcycle</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+
+  <div class="announcement">
+    <span class="pulse-dot"></span>
+    BANGLADESH MOTORCYCLE COLLECTION
+    <a href="#inventory">Explore collection <i data-lucide="arrow-up-right"></i></a>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+
+    <a class="brand" href="#top" aria-label="Riyad Bike home">
+      <span class="brand-mark">R</span>
+      <span>
+        RIYAD<span class="brand-light">BIKE</span>
+        <small>BANGLADESH MOTORCYCLE STORE</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a class="active" href="#top">Home</a>
+      <a href="#inventory">Motorcycles</a>
+      <a href="#experience">Why Riyad</a>
+      <a href="#journal">Journal</a>
+    </nav>
+
+    <div class="header-actions">
+
+      <button class="icon-btn search-toggle" aria-label="Search">
+        <i data-lucide="search"></i>
+      </button>
+
+      <button class="icon-btn" id="wishlistOpen" aria-label="Wishlist">
+        <i data-lucide="heart"></i>
+        <b class="count-badge" id="wishCount">0</b>
+      </button>
+
+      <button class="icon-btn cart-trigger" id="cartOpen" aria-label="Shopping bag">
+        <i data-lucide="shopping-bag"></i>
+        <b class="count-badge" id="cartCount">0</b>
+      </button>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <i data-lucide="menu"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-noise"></div>
+
+      <div class="hero-copy reveal">
+
+        <div class="eyebrow">
+          <span></span>
+          BUILT FOR THE UNFORGETTABLE
+        </div>
+
+        <h1>
+          OWN THE<br>
+          <em>OPEN ROAD.</em>
+        </h1>
+
+        <p>
+          More than a machine. A feeling you chase, a sound you remember,
+          a road that calls your name.
+        </p>
+
+        <div class="hero-ctas">
+
+          <a class="btn btn-primary" href="#inventory">
+            Explore motorcycles
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+
+          <a class="text-link" href="#experience">
+            Discover the Riyad way
+            <i data-lucide="arrow-down-right"></i>
+          </a>
+
+        </div>
+
+        <div class="hero-stats">
+
+          <div>
+            <strong>08<span>+</span></strong>
+            <small>FEATURED MACHINES</small>
+          </div>
+
+          <div>
+            <strong>24<span>/7</span></strong>
+            <small>RIDER SUPPORT</small>
+          </div>
+
+          <div>
+            <strong>4.9<span>/5</span></strong>
+            <small>RIDER RATING</small>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero-visual">
+
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+
+        <div class="hero-image-wrap">
+
+          <img
+            src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1500&q=90"
+            alt="Sport motorcycle"
+            class="hero-bike"
+          >
+
+        </div>
+
+        <div class="hero-label">
+          <span>01 / 08</span>
+          <b>THE NIGHT<br>RUNNER</b>
+          <small>PURE PERFORMANCE</small>
+        </div>
+
+        <div class="vertical-word">RIDE DIFFERENT</div>
+
+      </div>
+
+      <div class="hero-bottom">
+        <span>SCROLL TO EXPLORE</span>
+        <div class="scroll-line"></div>
+        <span>EST. 2024 — DHAKA</span>
+      </div>
+
+    </section>
+
+    <!-- TICKER -->
+    <section class="ticker">
+      <div class="ticker-track">
+        <span>RIDE YOUR STORY ✳</span>
+        <span>ENGINEERED TO MOVE ✳</span>
+        <span>FIND YOUR FREEDOM ✳</span>
+        <span>RIDE YOUR STORY ✳</span>
+        <span>ENGINEERED TO MOVE ✳</span>
+        <span>FIND YOUR FREEDOM ✳</span>
+      </div>
+    </section>
+
+    <!-- MOTORCYCLE COLLECTION -->
+    <section class="inventory section-pad" id="inventory">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <div class="eyebrow">
+            <span></span>
+            THE COLLECTION
+          </div>
+
+          <h2>
+            FIND YOUR <em>MACHINE.</em>
+          </h2>
+        </div>
+
+        <p>
+          Discover popular motorcycles available in the Bangladesh market.
+          Find a ride that matches your style.
+        </p>
+
+      </div>
+
+      <!-- FILTERS -->
+      <div class="filter-bar reveal">
+
+        <div class="filter-tabs" id="categoryTabs">
+
+          <button class="filter-chip selected" data-category="all">
+            All bikes <span>08</span>
+          </button>
+
+          <button class="filter-chip" data-category="sport">
+            Sport
+          </button>
+
+          <button class="filter-chip" data-category="naked">
+            Naked
+          </button>
+
+        </div>
+
+        <div class="filter-tools">
+
+          <label class="search-field">
+            <i data-lucide="search"></i>
+            <input
+              id="productSearch"
+              type="search"
+              placeholder="Search motorcycles..."
+            >
+          </label>
+
+          <select id="sortSelect" aria-label="Sort products">
+            <option value="featured">Sort: Featured</option>
+            <option value="low">Price: Low to high</option>
+            <option value="high">Price: High to low</option>
+            <option value="name">Name: A to Z</option>
+          </select>
+
+        </div>
+
+      </div>
+
+      <div class="results-line">
+
+        <span id="resultsCount">Showing 8 motorcycles</span>
+
+        <button id="clearFilters">
+          Clear filters
+          <i data-lucide="x"></i>
+        </button>
+
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+
+      <div class="empty-state hidden" id="emptyState">
+
+        <i data-lucide="bike"></i>
+
+        <h3>No rides found</h3>
+
+        <p>Try another search or clear your filters.</p>
+
+        <button class="btn btn-outline" id="resetSearch">
+          Reset collection
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- FEATURE SECTION -->
+    <section class="feature-band" id="experience">
+
+      <div class="feature-image">
+        <img
+          src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1200&q=85"
+          alt="Motorcycle on the road"
+        >
+      </div>
+
+      <div class="feature-content reveal">
+
+        <div class="eyebrow">
+          <span></span>
+          THE RIYAD DIFFERENCE
+        </div>
+
+        <h2>
+          NOT JUST A<br>
+          <em>SHOWROOM.</em><br>
+          A STARTING LINE.
+        </h2>
+
+        <p>
+          Every great ride begins with the right machine and the right people
+          behind it. We bring curated motorcycles, transparent details and
+          rider-first support together in one place.
+        </p>
+
+        <div class="feature-points">
+
+          <div>
+            <i data-lucide="shield-check"></i>
+            <span>
+              <b>Rider-first trust</b>
+              <small>Clear product information and support.</small>
+            </span>
+          </div>
+
+          <div>
+            <i data-lucide="gauge"></i>
+            <span>
+              <b>Curated performance</b>
+              <small>Popular motorcycles for everyday riding.</small>
+            </span>
+          </div>
+
+          <div>
+            <i data-lucide="headphones"></i>
+            <span>
+              <b>Here after the ride</b>
+              <small>Support that doesn't end at checkout.</small>
+            </span>
+          </div>
+
+        </div>
+
+        <a class="btn btn-primary" href="#inventory">
+          Find your ride
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- NUMBERS -->
+    <section class="numbers section-pad">
+
+      <div class="number-card reveal">
+        <strong data-count="8">0</strong>
+        <span>FEATURED BIKES</span>
+      </div>
+
+      <div class="number-card reveal">
+        <strong data-count="5">0</strong>
+        <span>POPULAR BRANDS</span>
+      </div>
+
+      <div class="number-card reveal">
+        <strong data-count="96">0</strong>
+        <span>RIDER SATISFACTION</span>
+      </div>
+
+      <div class="number-card reveal">
+        <strong data-count="24">0</strong>
+        <span>HOUR RESPONSE</span>
+      </div>
+
+    </section>
+
+    <!-- JOURNAL -->
+    <section class="journal section-pad" id="journal">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <div class="eyebrow">
+            <span></span>
+            FROM THE JOURNAL
+          </div>
+
+          <h2>
+            THE ROAD HAS<br>
+            <em>MORE TO TELL.</em>
+          </h2>
+        </div>
+
+        <a class="text-link" href="#footer">
+          Explore Riyad Bike
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+
+      </div>
+
+      <div class="journal-grid">
+
+        <article class="journal-card reveal">
+
+          <img
+            src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=900&q=85"
+            alt="Motorcycle close-up"
+          >
+
+          <div>
+            <small>RIDER NOTES · 06 MIN READ</small>
+
+            <h3>
+              Choosing a motorcycle that fits your everyday life
+            </h3>
+
+            <a href="#inventory">
+              Read story
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+
+        </article>
+
+        <article class="journal-card reveal">
+
+          <img
+            src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?auto=format&fit=crop&w=900&q=85"
+            alt="Open road"
+          >
+
+          <div>
+            <small>THE LONG WAY · 04 MIN READ</small>
+
+            <h3>
+              Why the best route is rarely the shortest one
+            </h3>
+
+            <a href="#inventory">
+              Read story
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+
+    <div class="footer-top">
+
+      <a class="brand" href="#top">
+        <span class="brand-mark">R</span>
+        <span>
+          RIYAD<span class="brand-light">BIKE</span>
+          <small>BANGLADESH MOTORCYCLE STORE</small>
+        </span>
+      </a>
+
+      <div class="footer-note">
+        YOUR NEXT RIDE<br>
+        <em>STARTS HERE.</em>
+      </div>
+
+      <!-- SOCIAL MEDIA -->
+      <div class="footer-socials">
+
+        <a href="https://www.facebook.com/share/1NqwQhG5VL/?mibextid=wwXIfr"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Facebook">
+
+          <svg viewBox="0 0 24 24">
+            <path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.6V3.7c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.2V13H10v8h3.5Z"/>
+          </svg>
+
+        </a>
+
+        <a href="https://wa.me/8801619528260"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="WhatsApp">
+
+          <svg viewBox="0 0 24 24">
+            <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.5 0 .2 5.3.2 11.8c0 2.1.6 4.1 1.6 5.8L0 24l6.5-1.7a12 12 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.2-3.5-8.4ZM12.1 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.9 1 1-3.8-.3-.4a9.8 9.8 0 0 1-1.5-5.1 10.1 10.1 0 0 1 20.2 0c0 5.5-4.5 9.9-10.1 9.9Zm5.5-7.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.1-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3Z"/>
+          </svg>
+
+        </a>
+
+        <a href="https://www.linkedin.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="LinkedIn">
+
+          <svg viewBox="0 0 24 24">
+            <path d="M5.2 3a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4ZM3.3 9h3.8v12H3.3V9Zm6.2 0h3.6v1.6h.1c.5-.9 1.7-2 3.5-2 3.8 0 4.5 2.5 4.5 5.7V21h-3.8v-5.9c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1V21H9.5V9Z"/>
+          </svg>
+
+        </a>
+
+      </div>
+
+      <a href="#top" class="back-top">
+        BACK TO TOP
+        <i data-lucide="arrow-up"></i>
+      </a>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>© 2026 RIYAD BIKE. ALL RIGHTS RESERVED.</span>
+
+      <span>BUILT FOR THE LOVE OF MOTORCYCLES.</span>
+
+      <span>
+        <a href="#inventory">MOTORCYCLES</a> ·
+        <a href="#experience">ABOUT</a> ·
+        <a href="mailto:hello@riyadbike.com">CONTACT</a>
+      </span>
+
+    </div>
+
+  </footer>
+
+  <!-- OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- CART DRAWER -->
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping cart">
+
+    <div class="drawer-head">
+      <div>
+        <small>YOUR SELECTION</small>
+        <h3>Shopping bag</h3>
+      </div>
+
+      <button class="icon-btn close-drawer" aria-label="Close cart">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <div class="drawer-body" id="cartItems"></div>
+
+    <div class="drawer-foot">
+
+      <div class="subtotal">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">৳0</strong>
+      </div>
+
+      <p>Shipping and final details are confirmed by the store.</p>
+
+      <button class="btn btn-primary checkout-btn" id="checkoutBtn">
+        Continue to checkout
+        <i data-lucide="arrow-right"></i>
+      </button>
+
+    </div>
+
+  </aside>
+
+  <!-- WISHLIST DRAWER -->
+  <aside class="drawer" id="wishDrawer" aria-label="Wishlist">
+
+    <div class="drawer-head">
+      <div>
+        <small>SAVED MACHINES</small>
+        <h3>Your wishlist</h3>
+      </div>
+
+      <button class="icon-btn close-drawer" aria-label="Close wishlist">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <div class="drawer-body" id="wishItems"></div>
+
+  </aside>
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="modal-wrap" id="quickModal">
+
+    <div class="modal-card">
+
+      <button class="icon-btn modal-close" aria-label="Close">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div id="quickContent"></div>
+
+    </div>
+
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
